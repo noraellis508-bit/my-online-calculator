@@ -508,8 +508,13 @@
 
       event.preventDefault();
     });
-
+document.querySelector('[data-action="clear-history"]')
+  .addEventListener("click", () => {
+    history = [];
+    renderHistory();
+  });
     render();
   </script>
 </body>
 </html>
+
